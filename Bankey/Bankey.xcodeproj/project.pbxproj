@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9704343B2851219A00F5EEB9 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9704343A2851219A00F5EEB9 /* LocalState.swift */; };
 		970461E8284D535F009E0A0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970461E7284D535F009E0A0C /* Assets.xcassets */; };
 		970461EB284D535F009E0A0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970461E9284D535F009E0A0C /* LaunchScreen.storyboard */; };
 		970461FF284D6A10009E0A0C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970461FE284D6A10009E0A0C /* LoginView.swift */; };
@@ -14,9 +15,11 @@
 		979ED921284EC59E00D83031 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979ED920284EC59E00D83031 /* OnboardingContainerViewController.swift */; };
 		97BA2FC5284FAC6900E845B4 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BA2FC1284FAAAC00E845B4 /* OnboardingViewController.swift */; };
 		97BA2FC8284FAC6E00E845B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970461DE284D535D009E0A0C /* AppDelegate.swift */; };
+		97BA2FCB284FE6B900E845B4 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BA2FCA284FE6B900E845B4 /* DummyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9704343A2851219A00F5EEB9 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		970461DB284D535D009E0A0C /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		970461DE284D535D009E0A0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		970461E7284D535F009E0A0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		970461FE284D6A10009E0A0C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		979ED920284EC59E00D83031 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		97BA2FC1284FAAAC00E845B4 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		97BA2FCA284FE6B900E845B4 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		970434392851218D00F5EEB9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9704343A2851219A00F5EEB9 /* LocalState.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		970461D2284D535D009E0A0C = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +70,7 @@
 		970461DD284D535D009E0A0C /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
+				970434392851218D00F5EEB9 /* Utils */,
 				979ED91F284EC56300D83031 /* Onboarding */,
 				970461FD284D69D4009E0A0C /* Login */,
 				970461FC284D6986009E0A0C /* Files */,
@@ -81,6 +94,7 @@
 			children = (
 				970461F5284D68D4009E0A0C /* LoginViewController.swift */,
 				970461FE284D6A10009E0A0C /* LoginView.swift */,
+				97BA2FCA284FE6B900E845B4 /* DummyViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -164,6 +178,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				97046202284D6E4B009E0A0C /* LoginViewController.swift in Sources */,
+				9704343B2851219A00F5EEB9 /* LocalState.swift in Sources */,
+				97BA2FCB284FE6B900E845B4 /* DummyViewController.swift in Sources */,
 				970461FF284D6A10009E0A0C /* LoginView.swift in Sources */,
 				97BA2FC5284FAC6900E845B4 /* OnboardingViewController.swift in Sources */,
 				97BA2FC8284FAC6E00E845B4 /* AppDelegate.swift in Sources */,

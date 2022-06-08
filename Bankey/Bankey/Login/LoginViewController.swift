@@ -7,6 +7,16 @@
 //Users/henriquezani/Documents/ios-bankey/Bankey/Bankey/Login
 import UIKit
 
+protocol LogoutDelegate: AnyObject {
+    func didLogout()
+    
+}
+
+protocol LoginViewControllerDelegate: AnyObject {
+    func didLogin()
+    
+}
+
 class LoginViewController: UIViewController {
     
     let titleLabel = UILabel()
@@ -15,6 +25,8 @@ class LoginViewController: UIViewController {
     let loginView = LoginView()
     let signInButton = UIButton(type: .system)
     let errorMessageLabel = UILabel()
+    
+    weak var delegate: LoginViewControllerDelegate?
     
     var username: String? {
         return loginView.usernameTextField.text
@@ -128,6 +140,7 @@ extension LoginViewController {
         
         if username == "Adm" && password == "123"{
             signInButton.backgroundColor = .systemGreen
+            delegate?.didLogin()
         } else {
             configureView(withMessage: "Incorrect username or password")
         }
