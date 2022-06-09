@@ -17,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let loginViewController = LoginViewController()
     let onboardingContainerViewController = OnboardingContainerViewController()
     let dummyViewController = DummyViewController()
+    let accountSummaryViewController = AccountSummaryViewController()
     let mainViewController = MainViewController()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions:[UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -31,8 +32,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //window?.rootViewController = loginViewController
         //window?.rootViewController = OnboardingContainerViewController()
-        window?.rootViewController = mainViewController
-        
+        //window?.rootViewController = mainViewController
+        window?.rootViewController = accountSummaryViewController
+
         return true
     }
 }
