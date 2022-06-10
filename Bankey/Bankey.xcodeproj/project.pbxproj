@@ -23,6 +23,7 @@
 		97E3D2712853CA820046EC5C /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97043446285269EE00F5EEB9 /* AccountSummaryViewController.swift */; };
 		97E3D27F2853EE330046EC5C /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E3D27E2853EE330046EC5C /* CurrencyFormatter.swift */; };
 		97E3D2822853EE7D0046EC5C /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E3D27B2853CAED0046EC5C /* AccountSummaryCell.swift */; };
+		97E3D2852853F76A0046EC5C /* DecimalUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E3D2842853F76A0046EC5C /* DecimalUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		97BA2FCA284FE6B900E845B4 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		97E3D27B2853CAED0046EC5C /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 		97E3D27E2853EE330046EC5C /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
+		97E3D2842853F76A0046EC5C /* DecimalUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				9704343A2851219A00F5EEB9 /* LocalState.swift */,
 				9704343E285148FA00F5EEB9 /* UIViewController.swift */,
 				97E3D27E2853EE330046EC5C /* CurrencyFormatter.swift */,
+				97E3D2842853F76A0046EC5C /* DecimalUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				97E3D26F2853CA7F0046EC5C /* AccountSummaryHeaderView.swift in Sources */,
 				970461FF284D6A10009E0A0C /* LoginView.swift in Sources */,
 				97BA2FC5284FAC6900E845B4 /* OnboardingViewController.swift in Sources */,
+				97E3D2852853F76A0046EC5C /* DecimalUtils.swift in Sources */,
 				97E3D27F2853EE330046EC5C /* CurrencyFormatter.swift in Sources */,
 				97BA2FC8284FAC6E00E845B4 /* AppDelegate.swift in Sources */,
 				9704344228514A7900F5EEB9 /* MainViewController.swift in Sources */,

@@ -9,20 +9,20 @@ import UIKit
 
 struct CurrencyFormatter {
     
-    //func makeAttributedCurrency(_ amount: Decimal) -> NSMutableAttributedString {
-        //let tuple = breakIntoDollarsAndCents(amount)
-        //return makeBalanceAttributed(dollars: tuple.0, cents: tuple.1)
-    //}
+    func makeAttributedCurrency(_ amount: Decimal) -> NSMutableAttributedString {
+        let tuple = breakIntoDollarsAndCents(amount)
+        return makeBalanceAttributed(dollars: tuple.0, cents: tuple.1)
+    }
     
     // Converts 929466.23 > "929,466" "23"
-    //func breakIntoDollarsAndCents(_ amount: Decimal) -> (String, String) {
-        //let tuple = modf(amount)
+    func breakIntoDollarsAndCents(_ amount: Decimal) -> (String, String) {
+        let tuple = modf(amount.doubleValue)
         
-        //let dollars = convertDollar(tuple.0)
-        //let cents = convertCents(tuple.1)
-
-        //return (dollars, cents)
-    //}
+        let dollars = convertDollar(tuple.0)
+        let cents = convertCents(tuple.1)
+        
+        return (dollars, cents)
+    }
     
     // Converts 929466 > 929,466
     private func convertDollar(_ dollarPart: Double) -> String {
