@@ -5,10 +5,6 @@
 </div>
 
 <p align="center">
-Calculator with a professional design, customizable and with several functions using object orientation and clean code.
-</p>
-
-<p align="center">
   <img src="assets/bankeyapp.gif">
  </p>
  
